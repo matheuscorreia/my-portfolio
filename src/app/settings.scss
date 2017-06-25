@@ -1,0 +1,63 @@
+$primary: #E7E7E7;
+$secondary: #CDB29B;
+$dark: #393939;
+// Color Scheme ----------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Nixie+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Font Stuff -----------------------------------------------------------
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+@mixin full-page-background($url) {
+  background: url($url) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Mixins ----------------------------------------------------------------------
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Animations ------------------------------------------------------------------
+
+.appear {
+  animation: 3s show ease;
+}
+
+// Animation Classes -----------------------------------------------------------
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Normalizing -----------------------------------------------------------------

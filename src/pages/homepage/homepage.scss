@@ -1,0 +1,65 @@
+@import '~global/settings';
+
+.background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  @include full-page-background('./assets/background.jpg');
+}
+
+.presentation {
+  margin: 20% 0px 0px 0px;
+}
+
+.classy {
+  font-family: 'Nixie One';
+  color: $primary;
+  text-align: center;
+  text-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+}
+
+.link-panel {
+  margin-top: 30px;
+
+  div {
+    margin: 10px 0px 10px 0px;
+  }
+
+}
+
+.social-panel {
+	position: fixed;
+	bottom: 0px;
+	left: 13%;
+
+	display: block;
+	margin: 0 auto;
+
+	width: 100%;
+	max-width: 75%;
+
+	text-align: center;
+
+	a{
+		border: none;
+		border-radius: 50px;
+		padding: 0;
+		margin: 0px 10px 10px 10px;
+
+		i {
+			padding: 0px;
+			font-size: 40px;
+			color: $primary;
+		}
+
+	}
+
+	span {
+		display: inline-block;
+		width: auto;
+		word-break: break-all;
+		color: $primary;
+		font-size: 60%;
+		margin: 25px 0px 0px 0px;
+	}
+}
